@@ -1,0 +1,74 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(0, 128, 233);
+    --bg-color: white;
+    --color: #131419;
+    --nav-height: 70px;
+    --font-size: 16px;
+
+    --link-hover-bg: rgb(245, 245, 245);
+    --link-hover-color: black;
+
+    --dropdown-menu-width: 230px;
+    --color-1: black;
+    --color-2: red;
+
+    --spacer: 5px;
+}
+
+body{
+    font-family: 'Mukta', sans-serif;
+    overflow-x: hidden;
+    background: rgba(245, 245, 245, 0.199);
+}
+
+.l-hero{
+    height: calc(100vh - var(--nav-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(245, 245, 245, 0.274);
+    text-align: center;
+    flex-direction: column;
+}
+
+.l-hero-title{
+    font-size: 62px;
+    text-align: center;
+}
+
+.l-mark{
+    /* padding:; */
+    background-image: linear-gradient(35deg, var(--color-1), var(--color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 72px;
+}
+
+.l-larger{
+    /* padding:; */
+    background-image: linear-gradient(35deg, var(--color-1), var(--color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 82px;
+}
+
+.hero-msg{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.l-btn{
+    border: none;
+    padding: 16px 25px;
+    margin: 30px 0;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: white;
+}
